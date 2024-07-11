@@ -1,0 +1,98 @@
+####################################################### Variable Declaration #######################################################
+
+@hostName= https://testnhhs.servicebus.windows.net/testnhh
+@sastoken=SharedAccessSignature sr=testnhhs.servicebus.windows.net%2ftestnhh&sig=ZbZeZrxtGxskCtN56j2%2fTIgdlHCgFavo%2f8T20p6PkVM%3d&se=1720729351&skn=RootManageSharedAccessKey
+@registrationId= 8911773071954061524-8123968900998535122-1
+@deviceToken=dREv56WhQ52Xa9dtQ6mnxX:APA91bG8fjKDhEyy5GyeXdKEpW5OWZZ8dwdNIYFnghpytvr8jvPgut9MYVF3RwaeRKiL76HOOlJWdej9aY5Z4IBZgiW168Cbnd7J_oImDz9d5EuL2FtdLLBuP216CJL3BmSuzXHgWk2R
+@api-version= api-version=2015-01
+@notificationId=NH-20240711094002843-7e2d7ea4c0204f22937af08d4f8a318d-01
+
+####################################################### Get the Regisration details #######################################################
+GET {{hostName}}/registrations/{{registrationId}}/?api-version=2015-01
+Content-Type: application/json
+Authorization: {{sastoken}}
+
+
+########################################################## register the device usig native registration for Fcm V1#######################################################
+POST {{hostName}}/registrations/?api-version=2015-01
+Content-Type: application/json
+Authorization: {{sastoken}}
+x-ms-version:2015-01
+
+<entry xmlns="http://www.w3.org/2005/Atom">
+    <content type="application/xml">
+        <FcmV1RegistrationDescription xmlns:i="http://www.w3.org/2001/XMLSchema-instance"
+            xmlns="http://schemas.microsoft.com/netservices/2010/10/servicebus/connect">
+            <Tags>raj</Tags>
+            <FcmV1RegistrationId>dREv56WhQ52Xa9dtQ6mnxX:APA91bG8fjKDhEyy5GyeXdKEpW5OWZZ8dwdNIYFnghpytvr8jvPgut9MYVF3RwaeRKiL76HOOlJWdej9aY5Z4IBZgiW168Cbnd7J_oImDz9d5EuL2FtdLLBuP216CJL3BmSuzXHgWk2R</FcmV1RegistrationId>
+        </FcmV1RegistrationDescription>
+    </content>
+</entry>
+
+
+########################################################## Template registration of Fcm V1#######################################################
+
+POST {{hostName}}/registraions/?{{api-version}}
+Content-Type: application/json
+Authorization: {{sastoken}}
+x-ms-version:2015-01
+
+<entry xmlns="http://www.w3.org/2005/Atom">
+    <content type="application/xml">
+        <FcmV1TemplateRegistrationDescription xmlns:i="http://www.w3.org/2001/XMLSchema-instance"
+            xmlns="http://schemas.microsoft.com/netservices/2010/10/servicebus/connect">
+            <Tags>rajesh</Tags>
+            <FcmV1RegistrationId>cWA58AkhTLqHkm5q5prGnr:APA91bGd46wU2MX17hr4pCAFLqnw5PR3ZIksL3ZltaKiGtHNdYnWTgiqs85Fl9mtOLo6z9GyrB7KKQy87yen_atCgwoNPBI-FLsypU58H5_GcBc3AQEki2WbAWP8s2wbT-URSPeE7mfc</FcmV1RegistrationId>
+            <BodyTemplate>{
+    "message": {
+        "data": {
+            "message": "$(message)",
+            "type": "$(type)",
+            "context": "$(context)",
+            "tag": "$(tag)",
+            "code": "$(code)",
+            "category": "$(category)",
+            "target": "$(target)",
+            "length": "$(length)"
+        }
+    }
+}
+            </BodyTemplate>
+        </FcmV1TemplateRegistrationDescription>
+    </content>
+</entry>
+
+
+####################################################### POST notifications to the device #######################################################
+
+POST {{hostName}}/messages/?{{api-version}}
+Content-Type: application/json
+Authorization: {{sastoken}}
+ServiceBusNotification-Tags:rajesh
+ServiceBusNotification-Format:template
+
+{
+    "message": "Server at 0n.g.nssvctesting.net requires passcode. Please accept to send.",
+    "type": "otp",
+    "context": "57c14b423339e4e2",
+    "tag": "rajesh",
+    "code": "57c14b423339e4e2",
+    "category": "gateway_otp_login",
+    "target": "https://0n.g.nssvctesting.net/nf/auth/doPush.do",
+    "length": "6"
+}
+
+
+####################################################### Get Per message telemetry #######################################################
+
+GET {{hostName}}/messages/{{notificationId}}/?{{api-version}}
+Content-Type: application/json
+Authorization: {{sastoken}}
+
+####################################################### Get registration details #######################################################
+
+GET {{hostName}}/registrations/{{registrationId}}/?{{api-version}}
+Content-Type: application/json
+Authorization: {{sastoken}}
+x-ms-version:2015-01
+
