@@ -1,0 +1,132 @@
+##############################################################################
+
+POST https://sakthiaisearchbasictest.search.windows.net/indexes('defectindex')/docs/search.index?api-version=2024-07-01
+//Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6InoxcnNZSEhKOS04bWdndDRIc1p1OEJLa0JQdyIsImtpZCI6InoxcnNZSEhKOS04bWdndDRIc1p1OEJLa0JQdyJ9.eyJhdWQiOiJodHRwczovL21hbmFnZW1lbnQuY29yZS53aW5kb3dzLm5ldCIsImlzcyI6Imh0dHBzOi8vc3RzLndpbmRvd3MubmV0LzE2YjNjMDEzLWQzMDAtNDY4ZC1hYzY0LTdlZGEwODIwYjZkMy8iLCJpYXQiOjE3MzUxOTMyODQsIm5iZiI6MTczNTE5MzI4NCwiZXhwIjoxNzM1MTk3NTIxLCJhY3IiOiIxIiwiYWlvIjoiQWFRQVcvOFlBQUFBb1dzeVFkdjZsM1NYYlcvOXptRmZ5bUpKMWF0MkFJMUdWWUVJVVBLR2NlUlNoS3BsdFpVckRiUlJYQXdTRGFRYTArb0xZM3MyMVoxTnBNVTc4enZ0ZDh3RXdHcHJkcDBsYlBReTU0MUo5KzBiWmNIRkpycXkwaityTzR3QWVxdjNacmhiM01kZ3ZLZCtGdFh1ZnJZNTVHc1lGVzFma21odkhTbE9BYVBpd3Q1dzV3MDNuZGlKSllaVTgxaTgxYjRwREVOcGlPL2NiRWt6MjJoTDBMbXluZz09IiwiYWx0c2VjaWQiOiI1OjoxMDAzMjAwMUMzQjgxQThGIiwiYW1yIjpbInJzYSIsIm1mYSJdLCJhcHBpZCI6IjE4ZmJjYTE2LTIyMjQtNDVmNi04NWIwLWY3YmYyYjM5YjNmMyIsImFwcGlkYWNyIjoiMCIsImRldmljZWlkIjoiNjM0NDQxZWYtYmIyYi00MjNkLWFhODgtMzY3Njg2NDUxOThiIiwiZW1haWwiOiJycmF0aG9yZUBtaWNyb3NvZnQuY29tIiwiZmFtaWx5X25hbWUiOiJSYXRob3JlIiwiZ2l2ZW5fbmFtZSI6IlJhamVzaCIsImdyb3VwcyI6WyJiMTMwNDAyMi0wOGU2LTQ0N2QtYjA5NC0xNTM3MDU5N2M2YjYiLCIwOTUzMWE3Mi0yYzNlLTRlMDYtYmUxZS0yNTk2YmQwOGRjZGQiLCIzYmQ3OWRhNS1mMjI0LTQ4NWItOTI0NS1iOTk2NWRiNzc4NWUiLCJkMzRjNGViZS00OTg0LTQ5MDMtYTY0ZC04YzIwMjgzZDUxNmIiLCJlMzA5NmRmNy1iNjVjLTRlMzItYWIxYS03YTM1ZGM2ODRmMGEiXSwiaWRwIjoiaHR0cHM6Ly9zdHMud2luZG93cy5uZXQvNzJmOTg4YmYtODZmMS00MWFmLTkxYWItMmQ3Y2QwMTFkYjQ3LyIsImlkdHlwIjoidXNlciIsImlwYWRkciI6IjI0MDY6YjQwMDpkNDoxMGQzOjQ5YmQ6NTU5ODo1ZmM5OmZjNjgiLCJuYW1lIjoiUmFqZXNoIFJhdGhvcmUiLCJvaWQiOiJhNTY2ZWFkNS05MDU0LTQ1YzEtOGVjNy1mMDJkNWJjYWMyMjciLCJwdWlkIjoiMTAwMzIwMDM4NTREQkEwQiIsInJoIjoiMS5BVVlBRThDekZnRFRqVWFzWkg3YUNDQzIwMFpJZjNrQXV0ZFB1a1Bhd2ZqMk1CUHhBT0ZHQUEuIiwic2NwIjoidXNlcl9pbXBlcnNvbmF0aW9uIiwic3ViIjoieWF2WE9jeVZuaEUwNXF1Q29XM1NkQmxYMlRMLTJabl93M0xlcGJ5TGllcyIsInRpZCI6IjE2YjNjMDEzLWQzMDAtNDY4ZC1hYzY0LTdlZGEwODIwYjZkMyIsInVuaXF1ZV9uYW1lIjoicnJhdGhvcmVAbWljcm9zb2Z0LmNvbSIsInV0aSI6IlQzQUJrV1ZsdzB1ckljV2hRMmhxQUEiLCJ2ZXIiOiIxLjAiLCJ3aWRzIjpbImI3OWZiZjRkLTNlZjktNDY4OS04MTQzLTc2YjE5NGU4NTUwOSJdLCJ4bXNfZWRvdiI6dHJ1ZSwieG1zX2lkcmVsIjoiMTIgMSIsInhtc190Y2R0IjoxNjQ1MTM3MjI4fQ.kQSDoDwyO-G7RybEvntbU62FeqH98VwWOXOJHrGhE1gaDKo6TTPf0xtYg_NO8tAm_HvE7Zmo3gsQdkl_skHOQA_3gpqwC8uqut3qZhvbyiut0zm9CMq-o9JvGwUgp2P_xWNYS8GXvKld7RczTtiyuy80ayONsiTg_t51VFcDyD339YQIHVsYWFzABVTGh-CrNco_353j3-Swbfb5YOY5Jnp8Vc-e1KNxnuyIDux49h1uzYPiuE3yE82boXEdAKS17SyU4QjKYG3ypW0ynBzQGM5XJxTUChjh2erCSbAN7IcWHAru6ijl8vd5XyPDHeHUo3TCysMNk6NPaZZeHROQeQ
+api-key: xbaXwdipqLUkk2wVh1hxkajzWsygrcpsH1UHfQEvjYAzSeDldiXD
+Content-type: application/json
+
+{
+  "value": [
+    {
+        "@search.Action": "mergeOrUpload",
+        "ID": "898430",
+        "DefectId": "898430",
+        "DefectType": "Bug",
+        "Product": "NetworX Pricer",
+        "PFID": 2,
+        "Component": "Other",
+        "FoundIn": "6.00.001",
+        "FixedIn": "6.00.002",
+        "IntroduceIn": ".",
+        "TicketId": "",
+        "Severity": "3 - Medium",
+        "Title": "High response time issue when loading page after logging on.",
+        "PlainTitle": "High response time issue when loading page after logging on.",
+        "CommunicationDescription": "Description:\r\n\r\nThe issue occurred when high response times were reported when loading the application home page.  The issue was found to be caused by the Processing CR + SL Line Determination By Qualifier Group calculation using multiple REST calls to retrieve qualifier groups. The issue was resolved by combining the calls into a single call to reduce response time.\r\n\r\nVerification:\r\n\r\n1. Log in to NetworX Pricer/Modeler.\r\n\r\n2, Verify that response times are normal.\r\n\r\n3. Verify that the Processing CR + SL Line Determination By Qualifier Group calculation functions as expected.",
+        "Status": "Closed",
+        "ProductName": "NetworX",
+        "PackageDate": "",
+        "AssigntoPackage": "NetworX Pricer 6.00.002.000",
+        "UDFMemo": "",
+        "DateOpened": "2022-10-06T09:28:48.887Z",
+        "DateModified": "2024-11-04T23:56:22.293Z",
+        "UDFMemoPlainContent": ""
+    },
+    { 
+      "@search.Action": "upload",
+      "ID": "1483394",
+      "DefectId": "1483394",
+      "DefectType": "Bug",
+      "Product": "NetworX PBA",
+      "PFID": 2,
+      "Component": "Batch",
+      "FoundIn": "6.10.003",
+      "FixedIn": "6.10.003",
+      "IntroduceIn": ".",
+      "TicketId": "",
+      "Severity": "4 - Low",
+      "Title": "Batch Pricing claims with a Claim Source Code of P fail on NDC mapping",
+      "PlainTitle": "Batch Pricing claims with a Claim Source Code of P fail on NDC mapping",
+      "CommunicationDescription": "Batch pricing claims with a Claim Source Code of P fails when the claim has an NDC code.",
+      "Status": "Closed",
+      "ProductName": "NetworX",
+      "PackageDate": "",
+      "AssigntoPackage": "NetworX PBA 6.10.003.000",
+      "UDFMemo": "",
+      "DateOpened": "2024-03-13T13:42:57.67Z",
+      "DateModified": "2024-04-22T12:55:53.32Z",
+      "UDFMemoPlainContent": ""
+    },
+    {
+      "@search.Action": "upload",
+      "ID": "1444706",
+      "DefectId": "1340337",
+      "DefectType": "Bug",
+      "Product": "NetworX Pricer and Modeler",
+      "PFID": 2,
+      "Component": "Optum",
+      "FoundIn": "6.10.001",
+      "FixedIn": "6.10.002",
+      "IntroduceIn": ".",
+      "TicketId": "",
+      "Severity": "4 - Low",
+      "Title": "Update error message when NetworX cannot connect to the Optum server - SA",
+      "PlainTitle": "Update error message when NetworX cannot connect to the Optum server - SA",
+      "CommunicationDescription": "The problem occurred when there were connectivity issues between the Optum Server and NetworX Pricer. The error returned by NetworX Pricer was a generic error message and did not include sufficient information indicating that application was unable to connect to the Optum server.\r\n\r\nThis has now been corrected by returning the appropriate error message when the application was unable to connect to the Optum Server.\r\n\r\nIn order to make this change, new error messages were introduced in the application:\r\n\r\n- The application returns \"Invalid Optum web service\" when the machine address is correct, but the Optum endpoint method is incorrect.\r\n- The application returns \"Optum server not found\" when the machine address is not found.\r\n- The application returns \"Optum service not available\" when the Optum property has an invalid port **or** the machine address and Optum method endpoint are correct, but the Optum services are down or not installed **or** the application is calling Optum as non-SSL when Optum is set up for SSL only.\r\n- The application returns \"Optum URL property not set\" when the Reprice.OptumWebServiceURL property is spaces or null.\r\n- The application returns \"Missing or invalid certificate\" when calling Optum with SSL when the certificate is invalid.\r\n- The application returns \"Unable to connect to Optum, verify Optum service\" for any other scenario not mentioned in the above scenarios.",
+      "Status": "Closed",
+      "ProductName": "NetworX",
+      "PackageDate": "",
+      "AssigntoPackage": "NetworX Pricer 6.10.003.000",
+      "UDFMemo": "",
+      "DateOpened": "2024-02-01T14:52:55.553Z",
+      "DateModified": "2024-04-18T14:13:56.127Z",
+      "UDFMemoPlainContent": ""
+    }
+  ]
+}
+
+##############################################################################################################################################################################
+
+POST https://sakthiaisearchbasictest.search.windows.net/indexes('defectindex')/search.analyze?api-version=2024-07-01
+//Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6InoxcnNZSEhKOS04bWdndDRIc1p1OEJLa0JQdyIsImtpZCI6InoxcnNZSEhKOS04bWdndDRIc1p1OEJLa0JQdyJ9.eyJhdWQiOiJodHRwczovL21hbmFnZW1lbnQuY29yZS53aW5kb3dzLm5ldCIsImlzcyI6Imh0dHBzOi8vc3RzLndpbmRvd3MubmV0LzE2YjNjMDEzLWQzMDAtNDY4ZC1hYzY0LTdlZGEwODIwYjZkMy8iLCJpYXQiOjE3MzUxOTMyODQsIm5iZiI6MTczNTE5MzI4NCwiZXhwIjoxNzM1MTk3NTIxLCJhY3IiOiIxIiwiYWlvIjoiQWFRQVcvOFlBQUFBb1dzeVFkdjZsM1NYYlcvOXptRmZ5bUpKMWF0MkFJMUdWWUVJVVBLR2NlUlNoS3BsdFpVckRiUlJYQXdTRGFRYTArb0xZM3MyMVoxTnBNVTc4enZ0ZDh3RXdHcHJkcDBsYlBReTU0MUo5KzBiWmNIRkpycXkwaityTzR3QWVxdjNacmhiM01kZ3ZLZCtGdFh1ZnJZNTVHc1lGVzFma21odkhTbE9BYVBpd3Q1dzV3MDNuZGlKSllaVTgxaTgxYjRwREVOcGlPL2NiRWt6MjJoTDBMbXluZz09IiwiYWx0c2VjaWQiOiI1OjoxMDAzMjAwMUMzQjgxQThGIiwiYW1yIjpbInJzYSIsIm1mYSJdLCJhcHBpZCI6IjE4ZmJjYTE2LTIyMjQtNDVmNi04NWIwLWY3YmYyYjM5YjNmMyIsImFwcGlkYWNyIjoiMCIsImRldmljZWlkIjoiNjM0NDQxZWYtYmIyYi00MjNkLWFhODgtMzY3Njg2NDUxOThiIiwiZW1haWwiOiJycmF0aG9yZUBtaWNyb3NvZnQuY29tIiwiZmFtaWx5X25hbWUiOiJSYXRob3JlIiwiZ2l2ZW5fbmFtZSI6IlJhamVzaCIsImdyb3VwcyI6WyJiMTMwNDAyMi0wOGU2LTQ0N2QtYjA5NC0xNTM3MDU5N2M2YjYiLCIwOTUzMWE3Mi0yYzNlLTRlMDYtYmUxZS0yNTk2YmQwOGRjZGQiLCIzYmQ3OWRhNS1mMjI0LTQ4NWItOTI0NS1iOTk2NWRiNzc4NWUiLCJkMzRjNGViZS00OTg0LTQ5MDMtYTY0ZC04YzIwMjgzZDUxNmIiLCJlMzA5NmRmNy1iNjVjLTRlMzItYWIxYS03YTM1ZGM2ODRmMGEiXSwiaWRwIjoiaHR0cHM6Ly9zdHMud2luZG93cy5uZXQvNzJmOTg4YmYtODZmMS00MWFmLTkxYWItMmQ3Y2QwMTFkYjQ3LyIsImlkdHlwIjoidXNlciIsImlwYWRkciI6IjI0MDY6YjQwMDpkNDoxMGQzOjQ5YmQ6NTU5ODo1ZmM5OmZjNjgiLCJuYW1lIjoiUmFqZXNoIFJhdGhvcmUiLCJvaWQiOiJhNTY2ZWFkNS05MDU0LTQ1YzEtOGVjNy1mMDJkNWJjYWMyMjciLCJwdWlkIjoiMTAwMzIwMDM4NTREQkEwQiIsInJoIjoiMS5BVVlBRThDekZnRFRqVWFzWkg3YUNDQzIwMFpJZjNrQXV0ZFB1a1Bhd2ZqMk1CUHhBT0ZHQUEuIiwic2NwIjoidXNlcl9pbXBlcnNvbmF0aW9uIiwic3ViIjoieWF2WE9jeVZuaEUwNXF1Q29XM1NkQmxYMlRMLTJabl93M0xlcGJ5TGllcyIsInRpZCI6IjE2YjNjMDEzLWQzMDAtNDY4ZC1hYzY0LTdlZGEwODIwYjZkMyIsInVuaXF1ZV9uYW1lIjoicnJhdGhvcmVAbWljcm9zb2Z0LmNvbSIsInV0aSI6IlQzQUJrV1ZsdzB1ckljV2hRMmhxQUEiLCJ2ZXIiOiIxLjAiLCJ3aWRzIjpbImI3OWZiZjRkLTNlZjktNDY4OS04MTQzLTc2YjE5NGU4NTUwOSJdLCJ4bXNfZWRvdiI6dHJ1ZSwieG1zX2lkcmVsIjoiMTIgMSIsInhtc190Y2R0IjoxNjQ1MTM3MjI4fQ.kQSDoDwyO-G7RybEvntbU62FeqH98VwWOXOJHrGhE1gaDKo6TTPf0xtYg_NO8tAm_HvE7Zmo3gsQdkl_skHOQA_3gpqwC8uqut3qZhvbyiut0zm9CMq-o9JvGwUgp2P_xWNYS8GXvKld7RczTtiyuy80ayONsiTg_t51VFcDyD339YQIHVsYWFzABVTGh-CrNco_353j3-Swbfb5YOY5Jnp8Vc-e1KNxnuyIDux49h1uzYPiuE3yE82boXEdAKS17SyU4QjKYG3ypW0ynBzQGM5XJxTUChjh2erCSbAN7IcWHAru6ijl8vd5XyPDHeHUo3TCysMNk6NPaZZeHROQeQ
+api-key: xbaXwdipqLUkk2wVh1hxkajzWsygrcpsH1UHfQEvjYAzSeDldiXD
+Content-type: application/json
+
+{
+  "text": "need more information on pyr_altlook_sw",
+    "analyzer": "standard.lucene"  
+}
+
+
+##############################################################################################################################################################################
+
+POST https://sakthiaisearchbasictest.search.windows.net/indexes('defectindex')/docs/search?api-version=2024-07-01
+//Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6InoxcnNZSEhKOS04bWdndDRIc1p1OEJLa0JQdyIsImtpZCI6InoxcnNZSEhKOS04bWdndDRIc1p1OEJLa0JQdyJ9.eyJhdWQiOiJodHRwczovL21hbmFnZW1lbnQuY29yZS53aW5kb3dzLm5ldCIsImlzcyI6Imh0dHBzOi8vc3RzLndpbmRvd3MubmV0LzE2YjNjMDEzLWQzMDAtNDY4ZC1hYzY0LTdlZGEwODIwYjZkMy8iLCJpYXQiOjE3MzUxOTMyODQsIm5iZiI6MTczNTE5MzI4NCwiZXhwIjoxNzM1MTk3NTIxLCJhY3IiOiIxIiwiYWlvIjoiQWFRQVcvOFlBQUFBb1dzeVFkdjZsM1NYYlcvOXptRmZ5bUpKMWF0MkFJMUdWWUVJVVBLR2NlUlNoS3BsdFpVckRiUlJYQXdTRGFRYTArb0xZM3MyMVoxTnBNVTc4enZ0ZDh3RXdHcHJkcDBsYlBReTU0MUo5KzBiWmNIRkpycXkwaityTzR3QWVxdjNacmhiM01kZ3ZLZCtGdFh1ZnJZNTVHc1lGVzFma21odkhTbE9BYVBpd3Q1dzV3MDNuZGlKSllaVTgxaTgxYjRwREVOcGlPL2NiRWt6MjJoTDBMbXluZz09IiwiYWx0c2VjaWQiOiI1OjoxMDAzMjAwMUMzQjgxQThGIiwiYW1yIjpbInJzYSIsIm1mYSJdLCJhcHBpZCI6IjE4ZmJjYTE2LTIyMjQtNDVmNi04NWIwLWY3YmYyYjM5YjNmMyIsImFwcGlkYWNyIjoiMCIsImRldmljZWlkIjoiNjM0NDQxZWYtYmIyYi00MjNkLWFhODgtMzY3Njg2NDUxOThiIiwiZW1haWwiOiJycmF0aG9yZUBtaWNyb3NvZnQuY29tIiwiZmFtaWx5X25hbWUiOiJSYXRob3JlIiwiZ2l2ZW5fbmFtZSI6IlJhamVzaCIsImdyb3VwcyI6WyJiMTMwNDAyMi0wOGU2LTQ0N2QtYjA5NC0xNTM3MDU5N2M2YjYiLCIwOTUzMWE3Mi0yYzNlLTRlMDYtYmUxZS0yNTk2YmQwOGRjZGQiLCIzYmQ3OWRhNS1mMjI0LTQ4NWItOTI0NS1iOTk2NWRiNzc4NWUiLCJkMzRjNGViZS00OTg0LTQ5MDMtYTY0ZC04YzIwMjgzZDUxNmIiLCJlMzA5NmRmNy1iNjVjLTRlMzItYWIxYS03YTM1ZGM2ODRmMGEiXSwiaWRwIjoiaHR0cHM6Ly9zdHMud2luZG93cy5uZXQvNzJmOTg4YmYtODZmMS00MWFmLTkxYWItMmQ3Y2QwMTFkYjQ3LyIsImlkdHlwIjoidXNlciIsImlwYWRkciI6IjI0MDY6YjQwMDpkNDoxMGQzOjQ5YmQ6NTU5ODo1ZmM5OmZjNjgiLCJuYW1lIjoiUmFqZXNoIFJhdGhvcmUiLCJvaWQiOiJhNTY2ZWFkNS05MDU0LTQ1YzEtOGVjNy1mMDJkNWJjYWMyMjciLCJwdWlkIjoiMTAwMzIwMDM4NTREQkEwQiIsInJoIjoiMS5BVVlBRThDekZnRFRqVWFzWkg3YUNDQzIwMFpJZjNrQXV0ZFB1a1Bhd2ZqMk1CUHhBT0ZHQUEuIiwic2NwIjoidXNlcl9pbXBlcnNvbmF0aW9uIiwic3ViIjoieWF2WE9jeVZuaEUwNXF1Q29XM1NkQmxYMlRMLTJabl93M0xlcGJ5TGllcyIsInRpZCI6IjE2YjNjMDEzLWQzMDAtNDY4ZC1hYzY0LTdlZGEwODIwYjZkMyIsInVuaXF1ZV9uYW1lIjoicnJhdGhvcmVAbWljcm9zb2Z0LmNvbSIsInV0aSI6IlQzQUJrV1ZsdzB1ckljV2hRMmhxQUEiLCJ2ZXIiOiIxLjAiLCJ3aWRzIjpbImI3OWZiZjRkLTNlZjktNDY4OS04MTQzLTc2YjE5NGU4NTUwOSJdLCJ4bXNfZWRvdiI6dHJ1ZSwieG1zX2lkcmVsIjoiMTIgMSIsInhtc190Y2R0IjoxNjQ1MTM3MjI4fQ.kQSDoDwyO-G7RybEvntbU62FeqH98VwWOXOJHrGhE1gaDKo6TTPf0xtYg_NO8tAm_HvE7Zmo3gsQdkl_skHOQA_3gpqwC8uqut3qZhvbyiut0zm9CMq-o9JvGwUgp2P_xWNYS8GXvKld7RczTtiyuy80ayONsiTg_t51VFcDyD339YQIHVsYWFzABVTGh-CrNco_353j3-Swbfb5YOY5Jnp8Vc-e1KNxnuyIDux49h1uzYPiuE3yE82boXEdAKS17SyU4QjKYG3ypW0ynBzQGM5XJxTUChjh2erCSbAN7IcWHAru6ijl8vd5XyPDHeHUo3TCysMNk6NPaZZeHROQeQ
+api-key: xbaXwdipqLUkk2wVh1hxkajzWsygrcpsH1UHfQEvjYAzSeDldiXD
+Content-type: application/json
+
+{
+  //"search": "need more information on pyr_altlook_sw",
+  "search": "898430",
+  "queryType": "simple",
+  "count": true
+}
+
+##############################################################################################################################################################################
+
+POST https://sakthiaisearchbasictest.search.windows.net/indexes('defectindex')/docs/search?api-version=2024-07-01
+//Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6InoxcnNZSEhKOS04bWdndDRIc1p1OEJLa0JQdyIsImtpZCI6InoxcnNZSEhKOS04bWdndDRIc1p1OEJLa0JQdyJ9.eyJhdWQiOiJodHRwczovL21hbmFnZW1lbnQuY29yZS53aW5kb3dzLm5ldCIsImlzcyI6Imh0dHBzOi8vc3RzLndpbmRvd3MubmV0LzE2YjNjMDEzLWQzMDAtNDY4ZC1hYzY0LTdlZGEwODIwYjZkMy8iLCJpYXQiOjE3MzUxOTMyODQsIm5iZiI6MTczNTE5MzI4NCwiZXhwIjoxNzM1MTk3NTIxLCJhY3IiOiIxIiwiYWlvIjoiQWFRQVcvOFlBQUFBb1dzeVFkdjZsM1NYYlcvOXptRmZ5bUpKMWF0MkFJMUdWWUVJVVBLR2NlUlNoS3BsdFpVckRiUlJYQXdTRGFRYTArb0xZM3MyMVoxTnBNVTc4enZ0ZDh3RXdHcHJkcDBsYlBReTU0MUo5KzBiWmNIRkpycXkwaityTzR3QWVxdjNacmhiM01kZ3ZLZCtGdFh1ZnJZNTVHc1lGVzFma21odkhTbE9BYVBpd3Q1dzV3MDNuZGlKSllaVTgxaTgxYjRwREVOcGlPL2NiRWt6MjJoTDBMbXluZz09IiwiYWx0c2VjaWQiOiI1OjoxMDAzMjAwMUMzQjgxQThGIiwiYW1yIjpbInJzYSIsIm1mYSJdLCJhcHBpZCI6IjE4ZmJjYTE2LTIyMjQtNDVmNi04NWIwLWY3YmYyYjM5YjNmMyIsImFwcGlkYWNyIjoiMCIsImRldmljZWlkIjoiNjM0NDQxZWYtYmIyYi00MjNkLWFhODgtMzY3Njg2NDUxOThiIiwiZW1haWwiOiJycmF0aG9yZUBtaWNyb3NvZnQuY29tIiwiZmFtaWx5X25hbWUiOiJSYXRob3JlIiwiZ2l2ZW5fbmFtZSI6IlJhamVzaCIsImdyb3VwcyI6WyJiMTMwNDAyMi0wOGU2LTQ0N2QtYjA5NC0xNTM3MDU5N2M2YjYiLCIwOTUzMWE3Mi0yYzNlLTRlMDYtYmUxZS0yNTk2YmQwOGRjZGQiLCIzYmQ3OWRhNS1mMjI0LTQ4NWItOTI0NS1iOTk2NWRiNzc4NWUiLCJkMzRjNGViZS00OTg0LTQ5MDMtYTY0ZC04YzIwMjgzZDUxNmIiLCJlMzA5NmRmNy1iNjVjLTRlMzItYWIxYS03YTM1ZGM2ODRmMGEiXSwiaWRwIjoiaHR0cHM6Ly9zdHMud2luZG93cy5uZXQvNzJmOTg4YmYtODZmMS00MWFmLTkxYWItMmQ3Y2QwMTFkYjQ3LyIsImlkdHlwIjoidXNlciIsImlwYWRkciI6IjI0MDY6YjQwMDpkNDoxMGQzOjQ5YmQ6NTU5ODo1ZmM5OmZjNjgiLCJuYW1lIjoiUmFqZXNoIFJhdGhvcmUiLCJvaWQiOiJhNTY2ZWFkNS05MDU0LTQ1YzEtOGVjNy1mMDJkNWJjYWMyMjciLCJwdWlkIjoiMTAwMzIwMDM4NTREQkEwQiIsInJoIjoiMS5BVVlBRThDekZnRFRqVWFzWkg3YUNDQzIwMFpJZjNrQXV0ZFB1a1Bhd2ZqMk1CUHhBT0ZHQUEuIiwic2NwIjoidXNlcl9pbXBlcnNvbmF0aW9uIiwic3ViIjoieWF2WE9jeVZuaEUwNXF1Q29XM1NkQmxYMlRMLTJabl93M0xlcGJ5TGllcyIsInRpZCI6IjE2YjNjMDEzLWQzMDAtNDY4ZC1hYzY0LTdlZGEwODIwYjZkMyIsInVuaXF1ZV9uYW1lIjoicnJhdGhvcmVAbWljcm9zb2Z0LmNvbSIsInV0aSI6IlQzQUJrV1ZsdzB1ckljV2hRMmhxQUEiLCJ2ZXIiOiIxLjAiLCJ3aWRzIjpbImI3OWZiZjRkLTNlZjktNDY4OS04MTQzLTc2YjE5NGU4NTUwOSJdLCJ4bXNfZWRvdiI6dHJ1ZSwieG1zX2lkcmVsIjoiMTIgMSIsInhtc190Y2R0IjoxNjQ1MTM3MjI4fQ.kQSDoDwyO-G7RybEvntbU62FeqH98VwWOXOJHrGhE1gaDKo6TTPf0xtYg_NO8tAm_HvE7Zmo3gsQdkl_skHOQA_3gpqwC8uqut3qZhvbyiut0zm9CMq-o9JvGwUgp2P_xWNYS8GXvKld7RczTtiyuy80ayONsiTg_t51VFcDyD339YQIHVsYWFzABVTGh-CrNco_353j3-Swbfb5YOY5Jnp8Vc-e1KNxnuyIDux49h1uzYPiuE3yE82boXEdAKS17SyU4QjKYG3ypW0ynBzQGM5XJxTUChjh2erCSbAN7IcWHAru6ijl8vd5XyPDHeHUo3TCysMNk6NPaZZeHROQeQ
+api-key: xbaXwdipqLUkk2wVh1hxkajzWsygrcpsH1UHfQEvjYAzSeDldiXD
+Content-type: application/json
+
+{
+ //"search": "need more information on pyr_altlook_sw",
+ "search": "898430",
+  "queryType": "semantic",
+  "semanticConfiguration": "semantic-qnaFields",
+  "captions": "extractive",
+  "answers": "extractive|count-5",
+  "filter": "PFID eq 2",
+  "count": "true",
+  "top":10
+}
