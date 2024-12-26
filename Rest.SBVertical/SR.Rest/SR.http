@@ -1,7 +1,7 @@
 ##############################################################################
 
 POST https://sakthiaisearchbasictest.search.windows.net/indexes('defectindex')/docs/search.index?api-version=2024-07-01
-api-key: xbaXwdipqLUkk2wVh1hxkajzWsygrcpsH1UHfQEvjYAzSeDldiXD
+api-key: 
 Content-type: application/json
 
 {
@@ -87,7 +87,7 @@ Content-type: application/json
 ##############################################################################################################################################################################
 
 POST https://sakthiaisearchbasictest.search.windows.net/indexes('defectindex')/search.analyze?api-version=2024-07-01
-api-key: xbaXwdipqLUkk2wVh1hxkajzWsygrcpsH1UHfQEvjYAzSeDldiXD
+api-key: 
 Content-type: application/json
 
 {
@@ -99,7 +99,7 @@ Content-type: application/json
 ##############################################################################################################################################################################
 
 POST https://sakthiaisearchbasictest.search.windows.net/indexes('defectindex')/docs/search?api-version=2024-07-01
-api-key: xbaXwdipqLUkk2wVh1hxkajzWsygrcpsH1UHfQEvjYAzSeDldiXD
+api-key: 
 Content-type: application/json
 
 {
@@ -112,7 +112,7 @@ Content-type: application/json
 ##############################################################################################################################################################################
 
 POST https://sakthiaisearchbasictest.search.windows.net/indexes('defectindex')/docs/search?api-version=2024-07-01
-api-key: xbaXwdipqLUkk2wVh1hxkajzWsygrcpsH1UHfQEvjYAzSeDldiXD
+api-key: 
 Content-type: application/json
 
 {
