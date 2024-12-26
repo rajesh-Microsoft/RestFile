@@ -92,7 +92,7 @@ Content-type: application/json
 
 {
   "text": "need more information on pyr_altlook_sw",
-    "analyzer": "standard.lucene"  
+  "analyzer": "standard.lucene"  
 }
 
 
